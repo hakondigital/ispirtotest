@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { AnimatedBackground } from "@/components/ui/animated-background";
 import { SmoothScroll } from "@/components/ui/smooth-scroll";
+import { PageIntro } from "@/components/ui/page-intro";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -63,6 +64,7 @@ export default function RootLayout({
       className={`${cormorant.variable} ${dmSans.variable}`}
     >
       <body className="min-h-screen antialiased">
+        <PageIntro />
         <SmoothScroll />
         <AnimatedBackground />
         <Header />
